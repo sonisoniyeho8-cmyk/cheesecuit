@@ -3,12 +3,12 @@ export default {
     const url = new URL(request.url);
 
     // 1. Jika browser meminta file gambar (.webp atau .jpg), ambil langsung dari repositori GitHub Anda
-    if (url.pathname.endsWith(".webp") || url.pathname.endsWith(".jpg") || url.pathname.endsWith(".png")) {
+    if (url.pathname.endsWith(".jpg") || url.pathname.endsWith(".jpg") || url.pathname.endsWith(".png")) {
       return env.ASSETS.fetch(request);
     }
 
     // 2. Konfigurasi Nomor WhatsApp (Ganti dengan nomor aktif Anda)
-    const nomorWA = "6281234567890";
+    const nomorWA = "84763529380";
 
     // 3. Script Pembangun Tampilan Blog (Murni JavaScript DOM tanpa file HTML)
     const appScript = `
@@ -95,7 +95,7 @@ export default {
         // Bagian 1: Memanggil foto regal.webp dari GitHub
         addText("h2", "1. Pesona Klasik Varian Biskuit Regal", { color: "#a66321", marginTop: "28px", fontSize: "1.35rem" });
         addImageSection(
-          "/regal.webp",
+          "/regal.jpg",
           "Cheesecuit dengan topping biskuit Regal utuh dan keju parut",
           "Varian Cheesecuit kotak bening dengan lapisan remahan biskuit, krim keju tebal, parutan keju cheddar, dan satu keping biskuit Regal utuh."
         );
@@ -104,7 +104,7 @@ export default {
         // Bagian 2: Memanggil foto cheese.jpg dari GitHub
         addText("h2", "2. Kemewahan Varian Full Cheese", { color: "#a66321", marginTop: "28px", fontSize: "1.35rem" });
         addImageSection(
-          "/cheese.jpg",
+          "/cheesecuit.jpg",
           "Cheesecuit wadah persegi panjang dengan parutan keju melimpah",
           "Sajian Cheesecuit persegi panjang dengan permukaan atas yang tertutup penuh oleh parutan keju keemasan."
         );
@@ -134,18 +134,6 @@ export default {
             deskripsi: "Lapisan crumble Regal, krim keju spesial, parutan cheddar, dan topping biskuit Regal utuh.",
             harga: "Rp 35.000",
             pesanWA: "Halo, saya ingin memesan Cheesecuit Marie Regal (Box Regular) seharga Rp 35.000."
-          },
-          {
-            nama: "Cheesecuit Full Cheese (Long Box Premium)",
-            deskripsi: "Ukuran lebih puas dalam wadah panjang dengan ekstra limpahan keju parut penuh di bagian atas.",
-            harga: "Rp 45.000",
-            pesanWA: "Halo, saya ingin memesan Cheesecuit Full Cheese (Long Box Premium) seharga Rp 45.000."
-          },
-          {
-            nama: "Paket Bundling Hemat (1 Regal + 1 Full Cheese)",
-            deskripsi: "Cocok untuk dinikmati bersama keluarga atau teman minum kopi di sore hari.",
-            harga: "Rp 75.000",
-            pesanWA: "Halo, saya ingin memesan Paket Bundling Hemat Cheesecuit seharga Rp 75.000."
           }
         ];
 
