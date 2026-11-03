@@ -132,7 +132,7 @@ export default {
           {
             nama: "Cheesecuit Marie Regal (Box Regular)",
             deskripsi: "Lapisan crumble Regal, krim keju spesial, parutan cheddar, dan topping biskuit Regal utuh.",
-            harga: "Rp 35.000",
+            harga: "Rp 15.000",
             pesanWA: "Halo, saya ingin memesan Cheesecuit Marie Regal (Box Regular) seharga Rp 35.000."
           }
         ];
